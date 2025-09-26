@@ -55,6 +55,10 @@ function soustraction() {
 }
 
 function division() {
+  if (input2 == 0) {
+    console.log("Tu ne peux pas diviser par 0");
+    return;
+  }
   let result = `${input1} / ${input2} = ${input1 / input2}`;
   addToHistory(result);
 
